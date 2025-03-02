@@ -50,7 +50,7 @@ jobs:
         # C++17 support started in MacOS 10.13, full support in 10.14+
 
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         path: Bindings/Python/wheelhouse/
 
