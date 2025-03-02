@@ -36,7 +36,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        python -m pip install -U pip setuptools wheel cibuildwheel==3.*
+        python -m pip install -U pip setuptools wheel cibuildwheel
     - name: Build
       run: |
         cd Bindings/Python
