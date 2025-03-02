@@ -1,10 +1,20 @@
 name: Python package
 
 on:
-#  push:
-  release:
-    types:
-      - published
+  workflow_dispatch:
+    inputs:
+      username:
+        description: 'Doxa_wheel'
+        required: true
+        default: 'Doxa_wheel'
+      environment:
+        description: 'Deployment environment'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - production
 
 jobs:
   build-wheels:
